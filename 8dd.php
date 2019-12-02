@@ -12,7 +12,7 @@ for($i = 0 ; $i<=1;$i++){
 for($j=0;$j<=1;$j++){
 $result[$i][$j]=0;
 for($k=0;$k<=1;$k++){
-$result[$i][$j]+=$a1[$i][$k]  * $a2[$k][$j];
+$result[$i][$j]+=$result[$i][$j] +($a1[$i][$k] * $a2[$k][$j]);
 }
 }
 }
